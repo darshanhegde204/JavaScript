@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="temp=temp+'1'">1</button>
+    <button onclick="temp=temp+'2'">2</button>
+    <button onclick="temp=temp+'3'">3</button>
+    <button onclick="temp=temp+'4'">4</button>
+    <button onclick="temp=temp+'5'">5</button>
+    <button onclick="temp=temp+'6'">6</button>
+    <button onclick="temp=temp+'7'">7</button>
+    <button onclick="temp=temp+'8'">8</button>
+    <button onclick="temp=temp+'9'">9</button>
+    <br>
+    <br>
+    <p>tap the button to enter the first number then click submit to store the first number</p>
+    <button>add first number</button>
+    <button onclick=" firstnum=temp; temp=0; parseInt(firstnum);">submit</button>
+    <br>
+    <p>tap the button to enter the second number then click submit to store the first number</p>
+    <button>add second number</button>
+    <button onclick=" secondnum=temp; temp=0; parseInt(secondnum);">submit</button>
+    <br>
+    <br>
+    <p>now select the operater</p>
+    <button onclick="Total=firstnum+secondnum; document.getElementById('sum').innerHTML=Total">+</button>
+    <button onclick="Total=firstnum-secondnum; document.getElementById('sum').innerHTML=Total">-</button>
+    <button onclick="Total=firstnum*secondnum; document.getElementById('sum').innerHTML=Total">*</button>
+    <button onclick="Total=firstnum/secondnum; document.getElementById('sum').innerHTML=Total">/</button>
+
+    <h1 id="sum"></h1>
+</body>
+
+</html>
+
+<script>
+    let firstnum;
+    let secondnum;
+    let temp;
+    let Total = 0;
+</script>
